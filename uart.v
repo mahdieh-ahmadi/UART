@@ -32,7 +32,7 @@ reg [2:0] counter;
 always @(posedge clk) begin
 	busy <= 0;
 
-	if(txd_start == 1) begin
+	if(txd_start == 1 && busy != 1) begin
 		start <= 1;
 		counter <= 0;
 	end

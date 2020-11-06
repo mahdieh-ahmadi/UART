@@ -74,7 +74,7 @@
     <transform xil_pn:end_ts="1604642202" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1604642202">
       <status xil_pn:value="SuccessfullyRun"/>
     </transform>
-    <transform xil_pn:end_ts="1604642840" xil_pn:in_ck="4719827516159495871" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1604642840">
+    <transform xil_pn:end_ts="1604642977" xil_pn:in_ck="4719827516159495871" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1604642977">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="test_uart.v"/>
@@ -92,15 +92,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1604642840" xil_pn:in_ck="4719827516159495871" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1604642840">
+    <transform xil_pn:end_ts="1604642977" xil_pn:in_ck="4719827516159495871" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1604642977">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="test_uart.v"/>
       <outfile xil_pn:name="uart.v"/>
     </transform>
-    <transform xil_pn:end_ts="1604642841" xil_pn:in_ck="4719827516159495871" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="8499606024003363967" xil_pn:start_ts="1604642840">
+    <transform xil_pn:end_ts="1604642978" xil_pn:in_ck="4719827516159495871" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="8499606024003363967" xil_pn:start_ts="1604642977">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="test_uart.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
@@ -132,7 +134,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1604642835" xil_pn:in_ck="4698100096" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7876427645398950716" xil_pn:start_ts="1604642826">
+    <transform xil_pn:end_ts="1604642973" xil_pn:in_ck="4698100096" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7876427645398950716" xil_pn:start_ts="1604642963">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -156,7 +158,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="uart.bld"/>

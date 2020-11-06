@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-11-06T09:35:30</DateModified>
+  <DateModified>2020-11-06T09:39:22</DateModified>
   <ModuleName>uart</ModuleName>
-  <SummaryTimeStamp>2020-11-06T09:33:14</SummaryTimeStamp>
+  <SummaryTimeStamp>2020-11-06T09:37:15</SummaryTimeStamp>
   <SavedFilePath>E:/university/3991/fpga/homeworks/UART/iseconfig/uart.xreport</SavedFilePath>
   <ImplementationReportsDirectory>E:/university/3991/fpga/homeworks/UART</ImplementationReportsDirectory>
   <DateInitialized>2020-11-06T09:14:21</DateInitialized>

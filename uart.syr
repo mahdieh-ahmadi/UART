@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: uart.prj
 
@@ -126,8 +126,8 @@ WARNING:Xst:647 - Input <txd_data<8:8>> is never used. This port will be preserv
     Found 3-bit register for signal <counter>.
     Found 1-bit register for signal <txd>.
     Found 1-bit register for signal <busy>.
-    Found 3-bit adder for signal <counter[2]_GND_1_o_add_5_OUT> created at line 42.
-    Found 1-bit 8-to-1 multiplexer for signal <counter[2]_txd_data[7]_Mux_4_o> created at line 41.
+    Found 3-bit adder for signal <counter[2]_GND_1_o_add_6_OUT> created at line 42.
+    Found 1-bit 8-to-1 multiplexer for signal <counter[2]_txd_data[7]_Mux_5_o> created at line 41.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   6 D-type flip-flop(s).
@@ -211,10 +211,9 @@ Top Level Output File Name         : uart.ngc
 Primitive and Black Box Usage:
 ------------------------------
 # BELS                             : 7
-#      LUT3                        : 1
 #      LUT4                        : 1
-#      LUT5                        : 3
-#      LUT6                        : 2
+#      LUT5                        : 2
+#      LUT6                        : 4
 # FlipFlops/Latches                : 6
 #      FD                          : 6
 # Clock Buffers                    : 1
@@ -282,7 +281,7 @@ Speed Grade: -3
 
    Minimum period: 2.458ns (Maximum Frequency: 406.860MHz)
    Minimum input arrival time before clock: 3.358ns
-   Maximum output required time after clock: 3.634ns
+   Maximum output required time after clock: 3.732ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -292,7 +291,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 2.458ns (frequency: 406.860MHz)
-  Total number of paths / destination ports: 21 / 6
+  Total number of paths / destination ports: 25 / 6
 -------------------------------------------------------------------------
 Delay:               2.458ns (Levels of Logic = 2)
   Source:            counter_1 (FF)
@@ -305,7 +304,7 @@ Delay:               2.458ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               5   0.447   0.819  counter_1 (counter_1)
-     LUT6:I4->O            1   0.203   0.684  Mmux_counter[2]_txd_data[7]_Mux_4_o_3 (Mmux_counter[2]_txd_data[7]_Mux_4_o_3)
+     LUT6:I4->O            1   0.203   0.684  Mmux_counter[2]_txd_data[7]_Mux_5_o_3 (Mmux_counter[2]_txd_data[7]_Mux_5_o_3)
      LUT5:I3->O            1   0.203   0.000  txd_rstpot (txd_rstpot)
      FD:D                      0.102          txd
     ----------------------------------------
@@ -326,7 +325,7 @@ Offset:              3.358ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.222   0.944  txd_data_4_IBUF (txd_data_4_IBUF)
-     LUT6:I0->O            1   0.203   0.684  Mmux_counter[2]_txd_data[7]_Mux_4_o_3 (Mmux_counter[2]_txd_data[7]_Mux_4_o_3)
+     LUT6:I0->O            1   0.203   0.684  Mmux_counter[2]_txd_data[7]_Mux_5_o_3 (Mmux_counter[2]_txd_data[7]_Mux_5_o_3)
      LUT5:I3->O            1   0.203   0.000  txd_rstpot (txd_rstpot)
      FD:D                      0.102          txd
     ----------------------------------------
@@ -337,20 +336,20 @@ Offset:              3.358ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              3.634ns (Levels of Logic = 1)
-  Source:            txd (FF)
-  Destination:       txd (PAD)
+Offset:              3.732ns (Levels of Logic = 1)
+  Source:            busy (FF)
+  Destination:       busy (PAD)
   Source Clock:      clk rising
 
-  Data Path: txd to txd
+  Data Path: busy to busy
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.447   0.616  txd (txd_OBUF)
-     OBUF:I->O                 2.571          txd_OBUF (txd)
+     FD:C->Q               5   0.447   0.714  busy (busy_OBUF)
+     OBUF:I->O                 2.571          busy_OBUF (busy)
     ----------------------------------------
-    Total                      3.634ns (3.018ns logic, 0.616ns route)
-                                       (83.0% logic, 17.0% route)
+    Total                      3.732ns (3.018ns logic, 0.714ns route)
+                                       (80.9% logic, 19.1% route)
 
 =========================================================================
 
@@ -368,8 +367,8 @@ clk            |    2.458|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.40 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.53 secs
  
 --> 
 
