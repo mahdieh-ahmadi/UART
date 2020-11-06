@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/university/3991/fpga/homeworks/UART
+T_opt
+!s110 1604642544
+V^]0S`KkcPWDR1Wm[?D3BU1
+Z1 04 9 4 work test_uart fast 0
+Z2 04 4 4 work glbl fast 0
+=1-c85b76f47ed2-5fa4e6f0-1ee-2d98
+Z3 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;10.5;63
+R0
+T_opt1
+!s110 1604642851
+VImInW517;14fCG8`gHAMU2
+R1
+R2
+=1-c85b76f47ed2-5fa4e822-314-36a4
+R3
+R4
+n@_opt1
+R5
+vglbl
+!s110 1604642850
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+INz3046GECC=X7FgQ2]FR>3
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1381681120
+8C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FC:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+Z7 OL;L;10.5;63
+r1
+!s85 0
+31
+!s108 1604642850.000000
+!s107 C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vtest_uart
+Z9 !s110 1604642849
+!i10b 1
+!s100 jbgI2@JgP3bc6HK?[4?NM1
+IOk66?RQfEJ97ahd@[LYiH1
+R6
+R0
+w1604642201
+8test_uart.v
+Ftest_uart.v
+L0 25
+R7
+r1
+!s85 0
+31
+Z10 !s108 1604642849.000000
+!s107 test_uart.v|
+!s90 -reportprogress|300|test_uart.v|
+!i113 0
+R8
+R4
+vuart
+R9
+!i10b 1
+!s100 :DRTH_lJQ9f3<lZTnAS[43
+Ib:IUQH;M`WRH9:nYVm?[f0
+R6
+R0
+w1604642824
+8uart.v
+Fuart.v
+L0 21
+R7
+r1
+!s85 0
+31
+R10
+!s107 uart.v|
+!s90 -reportprogress|300|uart.v|
+!i113 0
+R8
+R4

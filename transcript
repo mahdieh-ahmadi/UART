@@ -1,0 +1,59 @@
+# Reading C:/modeltech64_10.5/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {test_uart.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:37:29 on Nov 06,2020
+# vlog -reportprogress 300 uart.v 
+# -- Compiling module uart
+# 
+# Top level modules:
+# 	uart
+# End time: 09:37:29 on Nov 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:37:29 on Nov 06,2020
+# vlog -reportprogress 300 test_uart.v 
+# -- Compiling module test_uart
+# 
+# Top level modules:
+# 	test_uart
+# End time: 09:37:30 on Nov 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:37:30 on Nov 06,2020
+# vlog -reportprogress 300 C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 09:37:30 on Nov 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work work.test_uart glbl 
+# Start time: 09:37:30 on Nov 06,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.test_uart(fast)
+# Loading work.uart(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mahdie  Hostname: DESKTOP-RBQDBFC  ProcessID: 11672
+#           Attempting to use alternate WLF file "./wlft9qnmym".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9qnmym
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+run
+run
