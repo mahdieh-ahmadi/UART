@@ -53,7 +53,13 @@ module test_uart;
 		txd_data = 8'b0110_0101;
 		@(negedge clk) txd_start = 1;
 		@(negedge clk) txd_start = 0;
+		
         
+		  #2200
+		  txd_data = 8'b0010_0111;
+			@(negedge clk) txd_start = 1;
+			@(negedge clk) txd_start = 0;
+		  
 		// Add stimulus here
 
 	end

@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module uart(
-    input [8:0] txd_data,
+    input [7:0] txd_data,
     input txd_start,
     input clk,
     output reg txd,
@@ -32,12 +32,12 @@ reg [2:0] counter;
 always @(posedge clk) begin
 	busy <= 0;
 
-	if(txd_start == 1 && busy != 1) begin
+	if(txd_start == 1 && busy != 1) begin // if start pin is 1 and uart is not busy
 		start <= 1;
 		counter <= 0;
 	end
 	
-	if(start == 1 && counter < 8) begin
+	if(start == 1 && counter < 8) begin // if send is begin and number of clock is less than 8
 		txd <= txd_data[counter];
 		counter <= counter +1;
 		busy <= 1;

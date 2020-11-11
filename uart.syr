@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: uart.prj
 
@@ -121,7 +121,6 @@ WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\UART\uart.v" Line 4
 
 Synthesizing Unit <uart>.
     Related source file is "E:\university\3991\fpga\homeworks\UART\uart.v".
-WARNING:Xst:647 - Input <txd_data<8:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <start>.
     Found 3-bit register for signal <counter>.
     Found 1-bit register for signal <txd>.
@@ -241,7 +240,7 @@ Slice Logic Distribution:
    Number of unique control sets:         1
 
 IO Utilization: 
- Number of IOs:                          13
+ Number of IOs:                          12
  Number of bonded IOBs:                  12  out of    102    11%  
 
 Specific Feature Utilization:
@@ -367,14 +366,14 @@ clk            |    2.458|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.53 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.54 secs
  
 --> 
 
 Total memory usage is 4494080 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
